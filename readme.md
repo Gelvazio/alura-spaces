@@ -13,7 +13,7 @@
 ##Comando para criar os requirements
 `pip freeze > requirements.txt`
 
-##Comando para iniciar o Django 
+##Comando para iniciar o projeto do Django 
 `django-admin startproject setup .`
 
 ##SECRET_KEY = 'django-insecure--%1%&9r!%xemk$@ue6^mfp!qm+j2u5q4n+qk!6-!$^h11v&2x6'
@@ -26,4 +26,18 @@
 
 ## Rodar o projeto 
 python manage.py runserver
+
+## Criando o primeiro app 'galeria'
+python manage.py startapp galeria
+
+## Obs: Um projeto pode conter varios apps
+
+## Colocar os arquivos estaticos dentro da pasta 'static'
+* Depois rodar o comando abaixo para coletar os arquivos estaticos
+`python manage.py collectstatic`
+
+* Observar que apareceu uma pasta nova acima de 'venv'
+
+## Carregando demais paginas da aplicação
+
 
