@@ -25,10 +25,10 @@
 `pip freeze > requirements.txt`
 
 ## Rodar o projeto 
-python manage.py runserver
+`python manage.py runserver`
 
 ## Criando o primeiro app 'galeria'
-python manage.py startapp galeria
+`python manage.py startapp galeria`
 
 ## Obs: Um projeto pode conter varios apps
 
@@ -39,5 +39,15 @@ python manage.py startapp galeria
 * Observar que apareceu uma pasta nova acima de 'venv'
 
 ## Carregando demais paginas da aplicação
+
+## Comando para criar os models atraves de 'migrations'
+`python manage.py makemigrations`
+
+## Comando para atualizar as migrations
+`python manage.py migrate`
+
+## Instalar SQLite Viewer
+
+
 
 
