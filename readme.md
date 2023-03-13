@@ -68,10 +68,14 @@ https://brazilastronomy.files.wordpress.com/2014/08/hubble_space_telescope_crab_
 * Nasa
 https://apod.nasa.gov/apod/image/1701/potw1636aN159_HST_2048.jpg
 
+# Personalizando readme.md
+https://blog.rocketseat.com.br/como-fazer-um-bom-readme/#-status-do-projeto
+
+
 ### Features - Personalizacao do Projeto
-- [] Criar a rota de fotos mais vistas
+- [x] Criar a rota de fotos mais vistas
 - [] Criar a rota de fotos novas
-- [] Criar a rota de surpreenda-me - com fotos diferentes
+- [x] Criar a rota de surpreenda-me - com fotos diferentes
 - [] Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrele,Galáxia,Planeta)
 - [] Adicionar url direto da nasa mesmo, exemplo:
     https://apod.nasa.gov/apod/image/2303/RainbowTree_Houck_3198.jpg
