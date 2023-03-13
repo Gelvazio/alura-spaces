@@ -39,7 +39,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#newproject">Starting a New Project</a> &#xa0; | &#xa0;
-  <a href="#customizing-project">Customizing Project</a> &#xa0; | &#xa0;
+  <a href="#customizingproject">Customizing Project</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/Gelvazio" target="_blank">Author</a>
 </p>
@@ -87,7 +87,7 @@ $ python manage.py runserver
 # The server will initialize in the <http://localhost:8000>
 ```
 
-## :newproject: Create a new Project from zero ##
+## :newproject: Starting a New Project ##
 ```bash
 # Criando o primeiro app 'galeria'
 $ python manage.py startapp galeria`
