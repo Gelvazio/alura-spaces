@@ -46,7 +46,27 @@
 ## Comando para atualizar as migrations
 `python manage.py migrate`
 
-## Instalar SQLite Viewer
+## Instalar a extensao do vscode 'SQLite Viewer'
+
+## Configuracao do Django Admim
+* Dados do usuario
+`Usuario:admim`
+`Senha:123456`
+
+## Crud no Admin
+Apos mexer nomodel, precisa reexecutar as Migrations
+`python manage.py makemigrations`
+`python manage.py migrate`
+
+## Instalando Pillow para fotos
+`python -m pip install Pillow`
+
+## Locais para buscar as imagens das Nebulosas
+* Brasil
+https://brazilastronomy.files.wordpress.com/2014/08/hubble_space_telescope_crab_bebula.jpg
+
+* Nasa
+https://apod.nasa.gov/apod/image/1701/potw1636aN159_HST_2048.jpg
 
 
 
