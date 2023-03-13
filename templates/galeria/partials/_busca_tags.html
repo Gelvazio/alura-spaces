@@ -1,0 +1,34 @@
+{% load static %}
+<section class="banner">
+    <img class="banner__imagem" src="{% static '/assets/imagens/Banner(2).png' %}" alt="banner Alura Space">
+    <h1 class="banner__titulo"> A galeria mais completa de fotos do espaço!</h1>
+</section>
+<section class="tags">
+    <p class="tags__titulo">Busque por tags:</p>
+    <ul class="tags__lista">
+        <li>
+            <form action="{% url 'buscarcategoria' %}">
+                <input class="tags__tag" type="hidden" name="buscarcategoria" value="NEBULOSA">                    
+                <input type="submit" class="tags tags__tag" value="Nebulosa">                
+            </form>
+        </li> 
+        <li>
+            <form action="{% url 'buscarcategoria' %}">
+                <input class="tags__tag" type="hidden" name="buscarcategoria" value="ESTRELA">                    
+                <input type="submit" class="tags tags__tag" value="Estrela">                
+            </form>
+        </li> 
+        <li>
+            <form action="{% url 'buscarcategoria' %}">
+                <input class="tags__tag" type="hidden" name="buscarcategoria" value="GALAXIA">                    
+                <input type="submit" class="tags tags__tag" value="Galáxia">                
+            </form>
+        </li> 
+        <li>
+            <form action="{% url 'buscarcategoria' %}">
+                <input class="tags__tag" type="hidden" name="buscarcategoria" value="PLANETA">                    
+                <input type="submit" class="tags tags__tag" value="Planeta">                
+            </form>
+        </li>
+    </ul>
+</section>

@@ -1,90 +1,98 @@
-# Comando usado para criar projeto inicial
-## Rodar no terminal do Pycharm...
-`python -m venv C:\xampp\htdocs\projetos-estudos-tidas\projetos-python\02-FORMACAO-DJANGO\alura-spaces\venv`
-`python -m venv C:\fontes\fontes-geo\projetos-estudos-tidas\projetos-python\02-FORMACAO-DJANGO\alura-spaces\venv`
+<div align="center" id="top"> 
+  <img src="./.github/app.gif" alt="Alura Spaces" />
 
-# Comando para ativar a venv no vscode
-`c:/xampp/htdocs/projetos-estudos-tidas/projetos-python/02-FORMACAO-DJANGO/alura-spaces/venv/Scripts/Activate.ps1`
-`venv/Scripts/Activate.ps1`
+  &#xa0;
 
-##Comando para instalar django
-`pip install django`
+  <!-- <a href="https://aluraspaces.netlify.app">Demo</a> -->
+</div>
 
-##Comando para criar os requirements
-`pip freeze > requirements.txt`
+<h1 align="center">Alura Spaces</h1>
 
-##Comando para iniciar o projeto do Django 
-`django-admin startproject setup .`
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{Gelvazio}}/alura-spaces?color=56BEB8">
 
-##SECRET_KEY = 'django-insecure--%1%&9r!%xemk$@ue6^mfp!qm+j2u5q4n+qk!6-!$^h11v&2x6'
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{Gelvazio}}/alura-spaces?color=56BEB8">
 
-## instalando pacote de variaveis de ambiente 
-`pip install python-dotenv`
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{Gelvazio}}/alura-spaces?color=56BEB8">
 
-## Atualizar o requirements de novo
-`pip freeze > requirements.txt`
+  <img alt="License" src="https://img.shields.io/github/license/{{Gelvazio}}/alura-spaces?color=56BEB8">
 
-## Rodar o projeto 
-`python manage.py runserver`
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{Gelvazio}}/alura-spaces?color=56BEB8" /> -->
 
-## Criando o primeiro app 'galeria'
-`python manage.py startapp galeria`
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{Gelvazio}}/alura-spaces?color=56BEB8" /> -->
 
-## Observação: Um projeto pode conter varios 'apps'
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{Gelvazio}}/alura-spaces?color=56BEB8" /> -->
+</p>
 
-## Colocar os arquivos estaticos dentro da pasta 'static'
-* Depois rodar o comando abaixo para coletar os arquivos estaticos
-`python manage.py collectstatic`
+<!-- Status -->
 
-* Observar que apareceu uma pasta nova acima de 'venv'
+<!-- <h4 align="center"> 
+	🚧  Alura Spaces 🚀 Under construction...  🚧
+</h4> 
 
-## Carregando demais páginas da aplicação
+<hr> -->
 
-## Comando para criar os models atraves de 'migrations'
-`python manage.py makemigrations`
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/{{Gelvazio}}" target="_blank">Author</a>
+</p>
 
-## Comando para atualizar as migrations
-`python manage.py migrate`
+<br>
 
-## Instalar a extensao do vscode 'SQLite Viewer'
+## :dart: About ##
 
-## Configuracao do Django Admim
-* Dados do usuario
-`Usuario:admim`
-`Senha:123456`
+Describe your project
 
-## Crud no Admin
-Apos mexer nomodel, precisa reexecutar as Migrations
-`python manage.py makemigrations`
-`python manage.py migrate`
+## :sparkles: Features ##
 
-## Instalando Pillow para fotos
-`python -m pip install Pillow`
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
 
-## Locais para buscar as imagens das Nebulosas
-* Brasil
-https://brazilastronomy.files.wordpress.com/2014/08/hubble_space_telescope_crab_bebula.jpg
+## :rocket: Technologies ##
 
-* Nasa
-https://apod.nasa.gov/apod/image/1701/potw1636aN159_HST_2048.jpg
+The following tools were used in this project:
 
-# Personalizando readme.md
-https://blog.rocketseat.com.br/como-fazer-um-bom-readme/#-status-do-projeto
+- [Expo](https://expo.io/)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting ##
+
+```bash
+# Clone this project
+$ git clone https://github.com/{{Gelvazio}}/alura-spaces
+
+# Access
+$ cd alura-spaces
+
+# Install dependencies
+$ yarn
+
+# Run the project
+$ yarn start
+
+# The server will initialize in the <http://localhost:3000>
+```
+
+## :memo: License ##
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-### Features - Personalizacao do Projeto
-- [x] Criar a rota de fotos mais vistas
-- [] Criar a rota de fotos novas
-- [x] Criar a rota de surpreenda-me - com fotos diferentes
-- [] Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrele,Galáxia,Planeta)
-- [] Adicionar url direto da nasa mesmo, exemplo:
-    https://apod.nasa.gov/apod/image/2303/RainbowTree_Houck_3198.jpg
-    para isso usar o campo = publicada se for true pega da nasa senao pega local
-- []  Lista de varias fotos da Nasa
-https://apod.nasa.gov/apod/archivepix.html
- - [] Adicionar a opcao de curtir a foto por usuario
+Made with :heart: by <a href="https://github.com/{{Gelvazio}}" target="_blank">{{YOUR_NAME}}</a>
 
+&#xa0;
 
-
-
-
+<a href="#top">Back to top</a>

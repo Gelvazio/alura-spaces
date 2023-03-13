@@ -19,3 +19,13 @@ def buscar(request):
             fotografias = fotografias.filter(nome__icontains=nome_a_buscar)
 
     return render(request, "galeria/buscar.html", {"cards": fotografias})
+
+def buscarcategoria(request):
+    fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)
+
+    if "buscarcategoria" in request.GET:
+        valor_a_buscar = request.GET['buscarcategoria']
+        if valor_a_buscar:
+            fotografias = fotografias.filter(categoria__icontains=valor_a_buscar)
+
+    return render(request, "galeria/buscar_por_tipo.html", {"cards": fotografias})
