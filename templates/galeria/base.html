@@ -14,8 +14,13 @@
 </head>
 
 <body>
-    {% include 'galeria/partials/_menu.html' %}
-    {% block content %}{% endblock %}
+    <div class="pagina-inicial">
+        {% include 'galeria/partials/_cabecalho.html' %}
+        <main class="principal">
+            {% include 'galeria/partials/_menu.html' %}
+            {% block content %}{% endblock %}
+        </main>
+    </div>
     {% include 'galeria/partials/_footer.html' %}
 </body>
 

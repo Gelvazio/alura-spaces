@@ -1,5 +1,5 @@
 # Comando usado para criar projeto inicial
-## rodar no terminal do Pycharm...
+## Rodar no terminal do Pycharm...
 `python -m venv C:\xampp\htdocs\projetos-estudos-tidas\projetos-python\02-FORMACAO-DJANGO\alura-spaces\venv`
 `python -m venv C:\fontes\fontes-geo\projetos-estudos-tidas\projetos-python\02-FORMACAO-DJANGO\alura-spaces\venv`
 
@@ -30,7 +30,7 @@
 ## Criando o primeiro app 'galeria'
 `python manage.py startapp galeria`
 
-## Obs: Um projeto pode conter varios apps
+## Observação: Um projeto pode conter varios 'apps'
 
 ## Colocar os arquivos estaticos dentro da pasta 'static'
 * Depois rodar o comando abaixo para coletar os arquivos estaticos
@@ -38,7 +38,7 @@
 
 * Observar que apareceu uma pasta nova acima de 'venv'
 
-## Carregando demais paginas da aplicação
+## Carregando demais páginas da aplicação
 
 ## Comando para criar os models atraves de 'migrations'
 `python manage.py makemigrations`
