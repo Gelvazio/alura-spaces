@@ -25,10 +25,10 @@
 `pip freeze > requirements.txt`
 
 ## Rodar o projeto 
-python manage.py runserver
+`python manage.py runserver`
 
 ## Criando o primeiro app 'galeria'
-python manage.py startapp galeria
+`python manage.py startapp galeria`
 
 ## Obs: Um projeto pode conter varios apps
 
@@ -39,5 +39,35 @@ python manage.py startapp galeria
 * Observar que apareceu uma pasta nova acima de 'venv'
 
 ## Carregando demais paginas da aplicação
+
+## Comando para criar os models atraves de 'migrations'
+`python manage.py makemigrations`
+
+## Comando para atualizar as migrations
+`python manage.py migrate`
+
+## Instalar a extensao do vscode 'SQLite Viewer'
+
+## Configuracao do Django Admim
+* Dados do usuario
+`Usuario:admim`
+`Senha:123456`
+
+## Crud no Admin
+Apos mexer nomodel, precisa reexecutar as Migrations
+`python manage.py makemigrations`
+`python manage.py migrate`
+
+## Instalando Pillow para fotos
+`python -m pip install Pillow`
+
+## Locais para buscar as imagens das Nebulosas
+* Brasil
+https://brazilastronomy.files.wordpress.com/2014/08/hubble_space_telescope_crab_bebula.jpg
+
+* Nasa
+https://apod.nasa.gov/apod/image/1701/potw1636aN159_HST_2048.jpg
+
+
 
 
