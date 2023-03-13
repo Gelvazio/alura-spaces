@@ -38,6 +38,8 @@
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#newproject">Starting a New Project</a> &#xa0; | &#xa0;
+  <a href="#customizing-project">Customizing Project</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/Gelvazio" target="_blank">Author</a>
 </p>
@@ -46,7 +48,8 @@
 
 ## :dart: About ##
 
-Describe your project
+Projeto de estudos Python Alura
+* Observação: Um projeto pode conter varios 'apps'
 
 ## :sparkles: Features ##
 
@@ -78,13 +81,68 @@ $ git clone https://github.com/Gelvazio/alura-spaces
 $ cd alura-spaces
 
 # Install dependencies
-$ yarn
+$ pip install django
+$ pip freeze > requirements.txt
 
 # Run the project
-$ yarn start
+$ python manage.py runserver
 
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the <http://localhost:8000>
 ```
+
+## :newproject: Create a new Project from zero ##
+```bash
+# Criando o primeiro app 'galeria'
+$ python manage.py startapp galeria`
+
+# Clone this project or create a new project
+$ django-admin startproject setup .
+
+# Comando para ativar a venv no vscode
+$ venv/Scripts/Activate.ps1
+
+# Colocar os arquivos estaticos dentro da pasta 'static'
+# Depois rodar o comando abaixo para coletar os arquivos estaticos
+$ python manage.py collectstatic
+
+# Comando para criar os models atraves de 'migrations'
+$ python manage.py makemigrations
+
+# Comando para atualizar as migrations
+$ python manage.py migrate
+
+# Toda vez que mexer no model, precisa reexecutar as Migrations
+$ python manage.py makemigrations
+$ python manage.py migrate
+
+# Instalando Pillow para fotos
+$ python -m pip install Pillow
+
+# Secret Key deste projeto
+$ SECRET_KEY = 'django-insecure--%1%&9r!%xemk$@ue6^mfp!qm+j2u5q4n+qk!6-!$^h11v&2x6'
+
+# instalando pacote de variaveis de ambiente 
+$ pip install python-dotenv
+
+# Instalar a extensao do vscode 'SQLite Viewer'
+
+# Configuracao do Django Admim
+# Dados do usuario
+$ Usuario:admim
+$ Senha:123456
+
+```
+
+## :customizing-project: Personalizacao do Projeto
+- [x] Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrela, Galáxia, Planeta)
+- [] Criar a rota de fotos mais vistas
+- [] Criar a rota de fotos novas
+- [] Criar a rota de surpreenda-me - com fotos diferentes
+- [] Adicionar url direto da nasa mesmo, exemplo:
+    https://apod.nasa.gov/apod/image/2303/RainbowTree_Houck_3198.jpg
+    para isso usar o campo = publicada se for true pega da nasa senao pega local
+- []  Lista de varias fotos da Nasa: https://apod.nasa.gov/apod/archivepix.html
+- [] Adicionar a opcao de curtir a foto por usuario
 
 ## :memo: License ##
 
