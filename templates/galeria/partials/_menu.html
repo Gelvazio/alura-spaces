@@ -2,31 +2,31 @@
 <section class="menu-lateral">
     <nav class="menu-lateral__navegacao">
         {% if pagina_atual == "home" %}
-            <a href="{% url 'index' %}" class="menu-lateral-ativo"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>            
+            <a href="{% url 'index' %}" style="color:#7B78E5;font-weight: bold;"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>            
         {% else %}
             <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - inativo.png' %}"> Home</a>
         {% endif %}
 
         {% if pagina_atual == "maisvistas" %}
-            <a href="{% url 'maisvistas' %}" class="menu-lateral-ativo"><img src="{% static '/assets/ícones/1x/Mais vistas - ativo.png' %}"> Mais vistas</a>                    
+            <a href="{% url 'maisvistas' %}" style="color:#7B78E5;font-weight: bold;"><img src="{% static '/assets/ícones/1x/Mais vistas - ativo.png' %}"> Mais vistas</a>                    
         {% else %}
             <a href="{% url 'maisvistas' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>            
         {% endif %}
             
         {% if pagina_atual == "novasfotos" %}
-            <a href="{% url 'novasfotos' %}" class="menu-lateral-ativo"><img src="{% static '/assets/ícones/1x/Novas - ativo.png' %}"> Novas</a>                 
+            <a href="{% url 'novasfotos' %}" style="color:#7B78E5;font-weight: bold;"><img src="{% static '/assets/ícones/1x/Novas - ativo.png' %}"> Novas</a>                 
         {% else %}
             <a href="{% url 'novasfotos' %}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
         {% endif %}
         
         {% if pagina_atual == "surpreendame" %}
-            <a href="{% url 'surpreendame' %}" class="menu-lateral-ativo"><img src="{% static '/assets/ícones/1x/Surpreenda-me - ativo.png' %}"> Surpreenda-me</a>            
+            <a href="{% url 'surpreendame' %}" style="color:#7B78E5;font-weight: bold;"><img src="{% static '/assets/ícones/1x/Surpreenda-me - ativo.png' %}"> Surpreenda-me</a>            
         {% else %}
             <a href="{% url 'surpreendame' %}"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
         {% endif %}
             
         {% if pagina_atual == "fotododia" %}
-            <a href="{% url 'fotododia' %}" class="menu-lateral-ativo"><img src="{% static '/assets/ícones/1x/Mais vistas - ativo.png' %}"> Foto do dia</a>
+            <a href="{% url 'fotododia' %}" style="color:#7B78E5;font-weight: bold;"><img src="{% static '/assets/ícones/1x/Mais vistas - ativo.png' %}"> Foto do dia</a>
         {% else %}
             <a href="{% url 'fotododia' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Foto do dia</a>
         {% endif %}
