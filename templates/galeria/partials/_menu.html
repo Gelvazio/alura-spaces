@@ -2,9 +2,10 @@
 <section class="menu-lateral">
     <nav class="menu-lateral__navegacao">
         <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
+        <a href="http://localhost:8000/admin/"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Dashboard</a>
         <a href="{% url 'maisvistas' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
-        <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
-        <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
+        <a href="{% url 'novasfotos' %}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
+        <a href="{% url 'surpreendame' %}"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
         <a href="{% url 'fotododia' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Foto do dia</a>
     </nav>
 </section>

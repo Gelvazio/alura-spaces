@@ -49,12 +49,22 @@
 ## :dart: About ##
 
 Projeto de estudos Python Alura
-* Observação: Um projeto pode conter varios 'apps'
+* Observação: 
+  * Um projeto pode conter varios 'apps'
 
 * Documentação Django em portugues
-https://docs.djangoproject.com/pt-br/4.1/
+  * https://docs.python.org/pt-br/3/reference/datamodel.html
+  
+  * https://docs.djangoproject.com/pt-br/4.1/
 
-https://django-portuguese.readthedocs.io/en/1.0/ref/models/querysets.html
+  * https://django-portuguese.readthedocs.io/en/1.0/ref/models/querysets.html
+
+  * https://www.w3schools.com/python/default.asp
+
+  * https://dicasdepython.com.br/
+
+* Bancos de Dados e Python
+  * https://www.tutorialspoint.com/python_data_access/
 
 ## :sparkles: Features ##
 

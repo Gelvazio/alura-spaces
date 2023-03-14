@@ -8,6 +8,10 @@
         <section class="galeria">
             <div class="cards">
                 <h2 class="cards__titulo">Navegue pela galeria</h2>
+                {% if foto_sorteada != null %}
+                    <h2 class="cards__titulo">Foto sorteada: {{ foto_sorteada }}</h2>                    
+                {% endif %}
+
                 <ul class="cards__lista">
                     {% if cards %}
                     {% for fotografia in cards %}
