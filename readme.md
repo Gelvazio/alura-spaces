@@ -39,7 +39,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#newproject">Starting a New Project</a> &#xa0; | &#xa0;
-  <a href="#customizingproject">Customizing Project</a> &#xa0; | &#xa0;
+  <a href="#customizing">Customizing Project</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/Gelvazio" target="_blank">Author</a>
 </p>
@@ -130,7 +130,7 @@ $ Senha:123456
 
 ```
 
-## :customizing-project: Personalizacao do Projeto
+## :customizing: Project
 - [x] Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrela, Galáxia, Planeta)
 - [] Criar a rota de fotos mais vistas
 - [] Criar a rota de fotos novas
