@@ -1,8 +1,8 @@
 from django.urls import path
-from galeria.views import index, imagem, buscar, buscarcategoria, fotododia, curtidas, maisvistas, surpreendame, novasfotos
+from galeria.views import index, imagem, buscar, buscarcategoria, fotododia, curtidas, maisvistas, surpreendame, novasfotos, login, efetualogin
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('home', index, name='index'),
     path('imagem/<int:foto_id>', imagem, name='imagem'),
     path('buscar', buscar, name='buscar'),
     path('buscarcategoria', buscarcategoria, name='buscarcategoria'),
@@ -11,4 +11,7 @@ urlpatterns = [
     path('maisvistas', maisvistas, name='maisvistas'),
     path('surpreendame', surpreendame, name='surpreendame'),
     path('novasfotos', novasfotos, name='novasfotos'),
+    # rotas de login
+    path('', login, name='login'),
+    path('efetualogin', efetualogin, name='efetualogin'),
 ]

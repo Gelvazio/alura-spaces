@@ -108,6 +108,30 @@ def novasfotos(request):
     
     return render(request, "galeria/buscar.html", {"cards": lista_fotografias, "pagina_atual":"novasfotos"})
 
+def login(request):    
+    return render(request, "galeria/login.html", {"pagina_atual":"login"})
 
+def efetualogin(request):   
+    email = False
+    password = False
+    if "email" in request.GET:
+        email = request.GET['email']
+             
+    if "password" in request.GET:
+        password = request.GET['password']
+
+    # usuario = False
+    # if email and password:
+        # usuario = Usuario.objects.filter(email=email, password=password)         
+       
+    usuario = True
+    
+    #  Executa a validacao de login pelo banco de dados
+    if usuario:
+        fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)
+        return render(request, 'galeria/index.html', {"cards": fotografias, "pagina_atual":"home"})
+        
+    return render(request, "galeria/login.html", {"pagina_atual":"efetualogin"})
+  
 
 
