@@ -6,12 +6,7 @@ import random, sqlite3
 
 def index(request):
     fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)
-    return render(request, 'galeria/index.html', {"cards": fotografias})
-
-# def admin(request):
-#     fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)
-    
-#     return render(request, 'galeria/index.html', {"cards": fotografias})
+    return render(request, 'galeria/index.html', {"cards": fotografias, "pagina_atual":"home"})
 
 def imagem(request, foto_id):
     fotografia = get_object_or_404(Fotografia, pk=foto_id)
@@ -20,7 +15,7 @@ def imagem(request, foto_id):
     
     fotografia.save()
     
-    return render(request, 'galeria/imagem.html', {"fotografia": fotografia})
+    return render(request, 'galeria/imagem.html', {"fotografia": fotografia, "pagina_atual":"imagem"})
 
 def buscar(request):
     fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)
@@ -30,7 +25,7 @@ def buscar(request):
         if nome_a_buscar:
             fotografias = fotografias.filter(nome__icontains=nome_a_buscar)
 
-    return render(request, "galeria/buscar.html", {"cards": fotografias})
+    return render(request, "galeria/buscar.html", {"cards": fotografias, "pagina_atual":"home"})
 
 def buscarcategoria(request):
     fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)
@@ -40,10 +35,10 @@ def buscarcategoria(request):
         if valor_a_buscar:
             fotografias = fotografias.filter(categoria__icontains=valor_a_buscar)
 
-    return render(request, "galeria/buscar.html", {"cards": fotografias})
+    return render(request, "galeria/buscar.html", {"cards": fotografias, "pagina_atual":"buscarcategoria"})
 
 def fotododia(request):
-    return render(request, "galeria/nasafile.html")
+    return render(request, "galeria/nasafile.html", {"pagina_atual":"fotododia"})
 
 def curtidas(request, foto_id):
     fotografia = get_object_or_404(Fotografia, pk=foto_id)
@@ -55,13 +50,13 @@ def curtidas(request, foto_id):
         
     fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)
 
-    return render(request, "galeria/buscar.html", {"cards": fotografias})
+    return render(request, "galeria/buscar.html", {"cards": fotografias, "pagina_atual":"curtidas"})
 
 def maisvistas(request):
     # Lista apenas os 4 primeiros registros de fotos publicadas
     fotografias = Fotografia.objects.order_by('curtidas').filter(publicada=True)[:4]
 
-    return render(request, "galeria/buscar.html", {"cards": fotografias})
+    return render(request, "galeria/buscar.html", {"cards": fotografias, "pagina_atual":"maisvistas"})
   
 def surpreendame(request):
     lista_fotografias = Fotografia.objects.order_by('id').filter(publicada=True)
@@ -86,7 +81,7 @@ def surpreendame(request):
     else:
         fotografias = lista_fotografias
         
-    return render(request, "galeria/buscar.html", {"foto_sorteada": nome_foto_sorteada, "cards": fotografias})
+    return render(request, "galeria/buscar.html", {"foto_sorteada": nome_foto_sorteada, "cards": fotografias, "pagina_atual":"surpreendame"})
 
 def novasfotos(request):
     # Connecting to sqlite
@@ -111,7 +106,7 @@ def novasfotos(request):
     # Closing the connection
     conn.close()
     
-    return render(request, "galeria/buscar.html", {"cards": lista_fotografias})
+    return render(request, "galeria/buscar.html", {"cards": lista_fotografias, "pagina_atual":"novasfotos"})
 
 
 
