@@ -382,3 +382,15 @@ table {
     border: 2px solid #7B78E5;
     cursor: pointer;
 }
+
+/* CSS dos links da NASA */
+.fotododia-links {
+    display: flex;
+    flex-direction: column;
+    color: #D9D9D9;
+}
+
+.fotododia-links span a {
+    color: #D9D9D9;
+    text-decoration: none;
+}

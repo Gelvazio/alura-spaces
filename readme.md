@@ -51,6 +51,11 @@
 Projeto de estudos Python Alura
 * Observação: Um projeto pode conter varios 'apps'
 
+* Documentação Django em portugues
+https://docs.djangoproject.com/pt-br/4.1/
+
+https://django-portuguese.readthedocs.io/en/1.0/ref/models/querysets.html
+
 ## :sparkles: Features ##
 
 :heavy_check_mark: Feature 1;\
@@ -61,8 +66,8 @@ Projeto de estudos Python Alura
 
 The following tools were used in this project:
 
-- [Python](https://www.python.org/)
-- [Django](https://www.djangoproject.com/)
+:heavy_check_mark: [Python](https://www.python.org/)
+:heavy_check_mark: [Django](https://www.djangoproject.com/)
 
 ## :white_check_mark: Requirements ##
 
@@ -131,15 +136,16 @@ $ Senha:123456
 ```
 
 ## :white_check_mark: Customizing Project
-- [x] Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrela, Galáxia, Planeta)
+- :heavy_check_mark: Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrela, Galáxia, Planeta)
+- :heavy_check_mark: Criar a rota de foto do dia com links direto da NASA
 - :heavy_check_mark: Criar a rota de fotos mais vistas
-- :heavy_check_mark: Criar a rota de fotos novas
-- :heavy_check_mark: Criar a rota de surpreenda-me - com fotos diferentes
-- :heavy_check_mark: Adicionar url direto da nasa mesmo, exemplo:
+- [] - Criar a rota de fotos novas
+- [] - Criar a rota de surpreenda-me - com fotos diferentes
+- [] - Adicionar url direto da nasa mesmo, exemplo:
     https://apod.nasa.gov/apod/image/2303/RainbowTree_Houck_3198.jpg
     para isso usar o campo = publicada se for true pega da nasa senao pega local
-- :heavy_check_mark: Lista de varias fotos da Nasa: https://apod.nasa.gov/apod/archivepix.html
-- :heavy_check_mark: Adicionar a opcao de curtir a foto por usuario
+- [] - Lista de varias fotos da Nasa: https://apod.nasa.gov/apod/archivepix.html
+- [] - Adicionar a opcao de curtir a foto por usuario
 
 ## :memo: License ##
 
