@@ -146,12 +146,12 @@ $ Senha:123456
 ```
 
 ## :white_check_mark: Customizing Project
-  :heavy_check_mark: Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrela, Galáxia, Planeta)
-  :heavy_check_mark: Criar a rota de foto do dia com links direto da NASA
-  :heavy_check_mark: Criar a rota de fotos mais vistas
-  :heavy_check_mark: Criar a rota de fotos novas
-  :heavy_check_mark: Criar a rota de surpreenda-me - com fotos diferentes
-  :heavy_check_mark: Adicionar url direto da nasa mesmo, com as url por dia
+  :heavy_check_mark: Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrela, Galáxia, Planeta)\
+  :heavy_check_mark: Criar a rota de foto do dia com links direto da NASA\
+  :heavy_check_mark: Criar a rota de fotos mais vistas\
+  :heavy_check_mark: Criar a rota de fotos novas\
+  :heavy_check_mark: Criar a rota de surpreenda-me - com fotos diferentes\
+  :heavy_check_mark: Adicionar url direto da nasa mesmo, com as url por dia\
   :heavy_check_mark: Adicionar a opcao de curtir a foto por usuario
 
 ## :memo: License ##
