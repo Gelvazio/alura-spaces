@@ -38,8 +38,8 @@
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#newproject-starting-a-new-project">Starting a New Project</a> &#xa0; | &#xa0;
-  <a href="#customizing-project">Customizing Project</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-starting-a-new-project">Starting a New Project</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-customizing-project">Customizing Project</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/Gelvazio" target="_blank">Author</a>
 </p>
@@ -87,7 +87,7 @@ $ python manage.py runserver
 # The server will initialize in the <http://localhost:8000>
 ```
 
-## :newproject: Starting a New Project ##
+## :white_check_mark: Starting a New Project ##
 ```bash
 # Criando o primeiro app 'galeria'
 $ python manage.py startapp galeria`
@@ -130,7 +130,7 @@ $ Senha:123456
 
 ```
 
-## :customizing-project: Project
+## :white_check_mark: Customizing Project
 - [x] Criar as rotas de filtros por tipo de imagem(Nebulosa, Estrela, Galáxia, Planeta)
 - [] Criar a rota de fotos mais vistas
 - [] Criar a rota de fotos novas
