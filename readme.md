@@ -92,7 +92,7 @@ $ python manage.py runserver
 # Criando o primeiro app 'galeria'
 $ python manage.py startapp galeria`
 
-# Clone this project or create a new project
+# Create a new project
 $ django-admin startproject setup .
 
 # Comando para ativar a venv no vscode
